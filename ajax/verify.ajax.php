@@ -21,15 +21,15 @@ if ($_POST['number'] != "") {
   if ($print['ID_ESTATUS'] == 2) {
     //Cuerpo del mensaje
     $mail = "Su correo fue verificado con exito\r\n";
-    $mail .= "Ya puede iniciar sesión normalmente desde el siguiente link:\r\n";
-    $mail .= "<h2><a href='".LINK."login.php'>".LINK."login.php</a></h2>\r\n";
+    $mail .= "Ya puede iniciar sesi&#243;n normalmente desde el siguiente link:\r\n";
+    $mail .= "<h2><a href='".LINK."login.php'>Iniciar Sesi&#243;n</a></h2>\r\n";
     $mail .= "Si usted no se registro en el sitio, ignorar este mensaje o comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
     $mail .= "<h3 style='text-align: center;'>A T E N T A M E N T E</h3>\r\n";
     $mail .= "\r\n";
     $mail .= "\r\n";
     $mail .= "\r\n";
     $mail .= "<h3 style='text-align: center;'>CEO Default CORP</h3>\r\n";
-    $mail .= "<h3 style='text-align: center;'>I.C.S. Adrián Cabrera Jacobo</h3>\r\n";
+    $mail .= "<h3 style='text-align: center;'>I.C.S. Adri&#225;n Cabrera Jacobo</h3>\r\n";
     //Titulo
     $titulo = "Verificacion en el sitio Default-CORP";
     //cabecera

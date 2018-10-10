@@ -219,8 +219,8 @@ function registrar(){
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("user="+userName+"&name="+fullName+"&email="+email+"&phone="+phone+"&pass="+pass1);
   }else {
-    pSuccessMes.innerHTML = "Error inesperado :(";
-    pMes.innerHTML = "Error inesperado :(";
+    pSuccessMes.innerHTML = "Fallo registro";
+    pMes.innerHTML = answer['registerMes'];
     mensajeExito();
   }
 }

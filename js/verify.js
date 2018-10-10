@@ -22,7 +22,7 @@ function verificar() {
         var myVar2 = setInterval(redirigir, 8000);
       } else {
         pSuccessMes.innerHTML = "Fallo registro";
-        pMes.innerHTML = "Ocurrio un error con el servidor.<br>Favor de intentarlo mas tarde.<br>Si el problema persiste favor de contactar con el administrador";
+        pMes.innerHTML = answer['registerMes'];
         mensajeExito();
       }
     }
