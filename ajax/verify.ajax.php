@@ -38,7 +38,7 @@ if ($_POST['number'] != "") {
     //dirección del remitente
     $headers .= "From: Soporte Default-CORP < ".MAIL." >\r\n";
     //Enviamos el mensaje a tu_dirección_email
-    $bool = mail($email,$titulo,$mail,$headers);
+    $bool = mail($print['correo'],$titulo,$mail,$headers);
     if($bool == true){
       $answerJSON['registerMes'] = "¡Registrado con exito!";
       $answerJSON['registerMail'] = $print['correo'];
