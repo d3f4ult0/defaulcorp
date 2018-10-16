@@ -13,7 +13,7 @@ include 'view/header.php';
 if (isset($_GET['user']) && isset($_GET['token'])) {
   $user = $_GET['user'];
   $token = $_GET['token'];
-  $checkUser = getDataFromWhere($connection,"USUARIO","id_usuario",$user);
+  $checkUser = getDataFromWhere($connection,"usuario","id_usuario",$user);
   $checkUser = $checkUser[0];
   if ($checkUser['password'] == $token) {
     if ($checkUser['ID_ESTATUS'] == 3) {
