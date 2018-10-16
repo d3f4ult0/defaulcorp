@@ -20,16 +20,16 @@ if ($_POST['email'] != "") {
   $print = $print[0];
   if ($print['ID_ESTATUS'] == 3) {
     //Cuerpo del mensaje
-    $mail = "Solicito reestablecer su contraseña\r\n";
-    $mail .= "Puede cambiar su contraseña desde el siguiente link:\r\n";
-    $mail .= "<h2><a href='".LINK."restore-end.php?user=".$print['id_usuario']."&token=".$print['password']."'>".LINK."restore-end.php?user=".$print['id_usuario']."&token=".$print['password']."</a></h2>\r\n";
-    $mail .= "Si usted no solicito resstablecer su contraseña comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
+    $mail = "Solicito restablecer su contrase&ntilde;a\r\n";
+    $mail .= "Puede cambiar su contrase&ntilde;a dando click en la siguiente liga:\r\n";
+    $mail .= "<h2><a href='".LINK."restore-end.php?user=".$print['id_usuario']."&token=".$print['password']."'>Restaurar contrase&ntilde;a</a></h2>\r\n";
+    $mail .= "Si usted no solicito restablecer su contrase&ntilde;a, favor de comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
     $mail .= "<h3 style='text-align: center;'>A T E N T A M E N T E</h3>\r\n";
     $mail .= "\r\n";
     $mail .= "\r\n";
     $mail .= "\r\n";
     $mail .= "<h3 style='text-align: center;'>CEO Default CORP</h3>\r\n";
-    $mail .= "<h3 style='text-align: center;'>I.C.S. Adrián Cabrera Jacobo</h3>\r\n";
+    $mail .= "<h3 style='text-align: center;'>I.C.S. Adri&#225;n Cabrera Jacobo</h3>\r\n";
     //Titulo
     $titulo = "Cambio de contraseña en Default-CORP";
     //cabecera
