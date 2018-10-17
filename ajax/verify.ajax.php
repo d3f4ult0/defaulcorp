@@ -20,14 +20,13 @@ if ($_POST['number'] != "") {
   $print = $print[0];
   if ($print['ID_ESTATUS'] == 202) {
     //Cuerpo del mensaje
-    $mail = "Su correo fue verificado con exito\r\n";
+    $mail = "Su correo fue verificado con exito<br>";
     $mail .= "Ya puede iniciar sesi&#243;n normalmente desde el siguiente link:\r\n";
     $mail .= "<h2><a href='".LINK."login.php'>Iniciar Sesi&#243;n</a></h2>\r\n";
     $mail .= "Si usted no se registro en el sitio, ignorar este mensaje o comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
+    $mail .= "<br><br>";
     $mail .= "<h3 style='text-align: center;'>A T E N T A M E N T E</h3>\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
+    $mail .= "<br><br><br>";
     $mail .= "<h3 style='text-align: center;'>CEO Default CORP</h3>\r\n";
     $mail .= "<h3 style='text-align: center;'>I.C.S. Adri&#225;n Cabrera Jacobo</h3>\r\n";
     //Titulo

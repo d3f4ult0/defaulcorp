@@ -38,14 +38,13 @@ if ($_POST['user'] != "" && $_POST['email'] != "" && $_POST['name'] != "" && $_P
   $print = $print[0];
   if ($print) {
     //Cuerpo del mensaje
-    $mail = "Gracias por registrarse en el sitio Default-CORP\r\n";
+    $mail = "Gracias por registrarse en el sitio Default-CORP<br>";
     $mail .= "Por favor de click en la siguiente liga para completar su registro:\r\n";
     $mail .= "<h2><a href='".LINK."verify.php?user=".$print['id_usuario']."&token=".$pass."'>Verificar correo</a></h2>\r\n";
     $mail .= "Si usted no se registro en el sitio, ignorar este mensaje o comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
+    $mail .= "<br><br>";
     $mail .= "<h3 style='text-align: center;'>A T E N T A M E N T E</h3>\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
+    $mail .= "<br><br><br>";
     $mail .= "<h3 style='text-align: center;'>CEO Default CORP</h3>\r\n";
     $mail .= "<h3 style='text-align: center;'>I.C.S. Adri&#225;n Cabrera Jacobo</h3>\r\n";
     //Titulo

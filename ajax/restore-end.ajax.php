@@ -22,14 +22,13 @@ if ($_POST['pass'] != "" && $_POST['id'] != "") {
   $print = $print[0];
   if ($print['ID_ESTATUS'] == 2) {
     //Cuerpo del mensaje
-    $mail = "Ha cambiado su contrase&ntilde;a exitosamente\r\n";
+    $mail = "Ha cambiado su contrase&ntilde;a exitosamente<br>";
     $mail .= "Ya puede iniciar sesi&#243;n con normalidad, utilizando su nueva contrase&ntilde;a, desde la siguiente liga:\r\n";
     $mail .= "<h2><a href='".LINK."login.php'>Iniciar sesi&#243;n</a></h2>\r\n";
     $mail .= "Si usted no solicito resstablecer su contrase&ntilde;a comunicarse con el Administrador del sitio al correo ".MAIL."\r\n";
+    $mail .= "<br><br>";
     $mail .= "<h3 style='text-align: center;'>A T E N T A M E N T E</h3>\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
-    $mail .= "\r\n";
+    $mail .= "<br><br><br>";
     $mail .= "<h3 style='text-align: center;'>CEO Default CORP</h3>\r\n";
     $mail .= "<h3 style='text-align: center;'>I.C.S. Adri&#225;n Cabrera Jacobo</h3>\r\n";
     //Titulo
