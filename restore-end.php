@@ -16,7 +16,7 @@ if (isset($_GET['user']) && isset($_GET['token'])) {
   $checkUser = getDataFromWhere($connection,"usuario","id_usuario",$user);
   $checkUser = $checkUser[0];
   if ($checkUser['password'] == $token) {
-    if ($checkUser['ID_ESTATUS'] == 3) {
+    if ($checkUser['ID_ESTATUS'] == 203) {
       $page = "verify.php";
       include 'view/restore-end.view.php';
     }else {
