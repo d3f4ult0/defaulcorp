@@ -13,12 +13,12 @@ if ($_POST['email'] != "") {
   $email = $_POST['email'];
 
   $ver = $connection->prepare('UPDATE usuario
-  SET ID_ESTATUS = 3
+  SET ID_ESTATUS = 203
   WHERE correo = :mail');
   $ver->execute(array(':mail' => $email));
   $print = getDataFromWhere($connection,"usuario","correo",$email);
   $print = $print[0];
-  if ($print['ID_ESTATUS'] == 3) {
+  if ($print['ID_ESTATUS'] == 203) {
     //Cuerpo del mensaje
     $mail = "Solicito restablecer su contrase&ntilde;a\r\n";
     $mail .= "Puede cambiar su contrase&ntilde;a dando click en la siguiente liga:\r\n";

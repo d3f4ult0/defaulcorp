@@ -1,7 +1,7 @@
 <?php
 //Creacion de los scripts dinamicos para la verificacion del Estatus
 //En caso de que el usuario no ha verificado su correo
-if ($_SESSION['verify'] == 1) {
+if ($_SESSION['verify'] == 201) {
   echo "<script type='text/javascript'>
     var title = document.getElementById('modal-ver-title');
     var mes = document.getElementById('modal-ver-mes');
@@ -15,7 +15,7 @@ if ($_SESSION['verify'] == 1) {
   </script>";
 }
 //En caso de que el ususario solicito recuperacion de contraseña
-if ($_SESSION['verify'] == 3) {
+if ($_SESSION['verify'] == 203) {
   echo "<script type='text/javascript'>
     var title = document.getElementById('modal-ver-title');
     var mes = document.getElementById('modal-ver-mes');
@@ -29,7 +29,7 @@ if ($_SESSION['verify'] == 3) {
   </script>";
 }
 //Bienvenida al ususario
-// if ($_SESSION['verify'] == 2) {
+// if ($_SESSION['verify'] == 202) {
 //   echo "<script type='text/javascript'>
 //     var title = document.getElementById('modal-ver-title');
 //     var mes = document.getElementById('modal-ver-mes');

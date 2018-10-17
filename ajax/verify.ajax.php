@@ -13,12 +13,12 @@ if ($_POST['number'] != "") {
   $number = $_POST['number'];
 
   $ver = $connection->prepare('UPDATE usuario
-  SET ID_ESTATUS = 2
+  SET ID_ESTATUS = 202
   WHERE id_usuario = :num');
   $ver->execute(array(':num' => $number));
   $print = getDataFromWhere($connection,"usuario","id_usuario",$number);
   $print = $print[0];
-  if ($print['ID_ESTATUS'] == 2) {
+  if ($print['ID_ESTATUS'] == 202) {
     //Cuerpo del mensaje
     $mail = "Su correo fue verificado con exito\r\n";
     $mail .= "Ya puede iniciar sesi&#243;n normalmente desde el siguiente link:\r\n";

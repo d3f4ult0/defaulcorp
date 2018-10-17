@@ -28,7 +28,7 @@ if ($_POST['user'] != "" && $_POST['email'] != "" && $_POST['name'] != "" && $_P
   $pass = token($pass);
 
   $reg = $connection->prepare('INSERT INTO usuario (usuario,nombre,telefono,correo,password,ID_ESTATUS)
-  VALUES (:user,:name,:phone,:email,:pass,1)');
+  VALUES (:user,:name,:phone,:email,:pass,201)');
   $reg->execute(array(':user' => $user,
   ':name' => $name,
   ':email' => $email,
