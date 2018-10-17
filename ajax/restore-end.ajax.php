@@ -15,12 +15,12 @@ if ($_POST['pass'] != "" && $_POST['id'] != "") {
   $id = $_POST['id'];
 
   $ver = $connection->prepare('UPDATE usuario
-  SET password = :pass, ID_ESTATUS = 2
+  SET password = :pass, ID_ESTATUS = 202
   WHERE id_usuario = :id');
   $ver->execute(array(':pass' => $pass, ':id' => $id));
   $print = getDataFromWhere($connection,"usuario","id_usuario",$id);
   $print = $print[0];
-  if ($print['ID_ESTATUS'] == 2) {
+  if ($print['ID_ESTATUS'] == 202) {
     //Cuerpo del mensaje
     $mail = "Ha cambiado su contrase&ntilde;a exitosamente<br>";
     $mail .= "Ya puede iniciar sesi&#243;n con normalidad, utilizando su nueva contrase&ntilde;a, desde la siguiente liga:\r\n";
