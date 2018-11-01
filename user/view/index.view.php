@@ -27,6 +27,7 @@
                 <li style="list-style-type: none"><i class="material-icons yellow-text">report_problem</i> Editar unidad--->Solo para administrador, accesible solo desde el listado de unidades.</li>
                 <li style="list-style-type: none"><i class="material-icons yellow-text">report_problem</i> Listado de trabajadores--->Todos estan en el archivo users.php</li>
                 <li style="list-style-type: none"><i class="material-icons yellow-text">report_problem</i> Listado de los estatus del sistema---> Incompleto</li>
+                <li>Prueba de modificación en la computadora del trabajo.</li>
               </ul>
               <li>Estilos y vistas:</li>
               <ul style="padding-left: 0px;">
