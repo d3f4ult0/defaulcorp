@@ -20,12 +20,17 @@
                 </div>
                 <select class="custom-select" id="tipo" onchange="checkTipo()">
                   <option value="0" selected>Selecciona...</option>
-                  <option value="U">Usuario(U)</option>
-                  <option value="M">Unidad(M)</option>
-                  <option value="A">Administrador/trabajarod(A)</option>
-                  <option value="C">Chofer(C)</option>
-                  <option value="F1">Claves(F1)</option>
+                  <option value="U">Usuario (U)</option>
+                  <option value="M">Unidad (M)</option>
+                  <option value="A">Administrador/trabajador (A)</option>
+                  <option value="C">Chofer (C)</option>
+                  <option value="F1">Claves (F1)</option>
                 </select>
+              </div>
+              <div class="form-group">
+                <label for="numero">Numero identificador del estado*</label>
+                <input type="text" class="form-control" id="numero" placeholder="Ingrese numero">
+                <small id="numeroHelp" class="form-text text-muted">El numero no se puede repetir.</small>
               </div>
               <div class="form-group">
                 <label for="nombre">Nombre del estado</label>
@@ -35,7 +40,7 @@
               <div class="form-group">
                 <label for="comentario">Comentario</label>
                 <input type="text" class="form-control" id="comentario" placeholder="">
-                <small id="comentarioHelp" class="form-text text-muted">El nombre debe ser descriptivo, hasta 1500 caracteres.</small>
+                <small id="comentarioHelp" class="form-text text-muted">Describe a fondo el fin del estado, hasta 1500 caracteres.</small>
               </div>
               <small id="formHelp" class="form-text text-muted">*Datos Obligatorios</small>
               <br>
