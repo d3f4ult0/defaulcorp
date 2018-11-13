@@ -89,7 +89,7 @@
                 </div>
                 <small id="estatusHelp" class="form-text text-muted"></small>
               <?php else: ?>
-                <input type="hidden" id="estatus" value="11">
+                <input type="hidden" id="estatus" value="401">
                 <small id="estatusHelp" class="form-text text-muted"></small>
               <?php endif; ?>
               <small id="formHelp" class="form-text text-muted">*Datos Obligatorios</small>

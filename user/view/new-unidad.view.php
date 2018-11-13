@@ -50,7 +50,7 @@
                 <small id="facturaHelp" class="form-text text-muted">El numero de la factura puede incluir letras y sin guiones (-).</small>
               </div>
               <div class="form-group">
-                <label for="fecha">Año*</label>
+                <label for="fecha">Fecha de factura*</label>
                 <input class="form-control" id="fecha" type="date" step="1" min="2013-01-01" max="<?php echo date("Y-m-d");?>" value="<?php echo date("Y-m-d");?>" onblur="checkFecha()">
                 <small id="fechaHelp" class="form-text text-muted">Tomar la fecha de la factura (en caso de ser original).</small>
               </div>
@@ -123,7 +123,7 @@
                     <label class="input-group-text" for="estatus">Estatus*</label>
                   </div>
                   <select class="custom-select" id="estatus">
-                    <option value="4" selected disabled>Unidad pre-registrada, que aun no ha pasado los puntos de revisión o que esta en proceso.</option>
+                    <option value="701" selected disabled>Unidad pre-registrada, que aun no ha pasado los puntos de revisión o que esta en proceso.</option>
                   </select>
                 </div>
                 <small id="estatusHelp" class="form-text text-muted"></small>
