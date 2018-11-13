@@ -123,7 +123,7 @@
                     <label class="input-group-text" for="estatus">Estatus*</label>
                   </div>
                   <select class="custom-select" id="estatus">
-                    <option value="701" selected disabled>Unidad pre-registrada, que aun no ha pasado los puntos de revisión o que esta en proceso.</option>
+                    <option value="801" selected disabled>Unidad pre-registrada, que aun no ha pasado los puntos de revisión o que esta en proceso.</option>
                   </select>
                 </div>
                 <small id="estatusHelp" class="form-text text-muted"></small>
