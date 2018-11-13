@@ -260,8 +260,8 @@ function newUnidad(){
             clearInterval(myVar2);
           }, 3500);
         } else {
-          printTitleMes.innerHTML = "Fallo registro";
-          printMes.innerHTML = "Ocurrio un error con el servidor.<br>Favor de intentarlo mas tarde.<br>Si el problema persiste favor de contactar con el administrador";
+          printTitleMes.innerHTML = answer['mesTitle'];
+          printMes.innerHTML = answer['mes'];
           mensajeExito();
         }
       }

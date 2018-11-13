@@ -25,10 +25,14 @@ if ($_POST['placas'] != "" && $_POST['serie'] != "" && $_POST['factura'] != "" &
   $verify = getDataFromWhere($connection,'unidad','placas',$placas);
   if ($verify) {
     $answerJSON['unidadNum'] = 0;
+    $answerJSON['mesTitle'] = "Falla en el servidor 02";
+    $answerJSON['mes'] = "No se pudo dar de alta la unidad, placas repetidas, si el problema persiste contacte con el administrador";
   } else {
     $verify = getDataFromWhere($connection,'unidad','serie',$serie);
     if ($verify) {
       $answerJSON['unidadNum'] = 0;
+      $answerJSON['mesTitle'] = "Falla en el servidor 03";
+      $answerJSON['mes'] = "No se pudo dar de alta la unidad, numero de serie repetido, si el problema persiste contacte con el administrador";
     } else {
       $newUnidad = $connection->prepare('INSERT INTO unidad (placas,serie,factura,no_factura,fecha,tipo,ID_MARCA,ID_PATRON,ID_ESTATUS)
       VALUES (:placas,:serie,:factura,:numero,:fecha,:tipo,:marca,:patron,:estatus)');
@@ -49,11 +53,15 @@ if ($_POST['placas'] != "" && $_POST['serie'] != "" && $_POST['factura'] != "" &
         $answerJSON['mes'] = "La unidad con placas: <strong>".$placas."</strong>, se dio de alta en el sistema con el numero <strong>M-".$verUnidad['id_unidad']."</strong><br>Ya se puede visualizar en el listado de unidades, para poder asignarle un turno y chofer.";
       } else {
         $answerJSON['unidadNum'] = 0;
+        $answerJSON['mesTitle'] = "Falla en el servidor 04";
+        $answerJSON['mes'] = "No se pudo dar de alta la unidad, si el problema persiste contacte con el administrador";
       }
     }
   }
 } else {
   $answerJSON['unidadNum'] = 0;
+  $answerJSON['mesTitle'] = "Falla en el servidor 01";
+  $answerJSON['mes'] = "No se pudo dar de alta la unidad, si el problema persiste contacte con el administrador";
 }
 
 
