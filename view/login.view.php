@@ -22,7 +22,7 @@
               </div>
               <div class="form-group">
                 <label for="pass">Contraseña</label>
-                <input type="password" class="form-control" id="pass" aria-describedby="passHelp" placeholder="Ingresa contraseña" onkeydown="checkPass()">
+                <input type="password" class="form-control" id="pass" aria-describedby="passHelp" placeholder="Ingresa contraseña" onkeyup="checkPass()">
                 <small id="passHelp" class="form-text text-muted">Contraseña de 6 digitos o mas</small>
               </div>
               <button type="button" id="access" class="btn btn-success" data-toggle="modal" data-target="#modalLoad" disabled onclick="iniciar()">
