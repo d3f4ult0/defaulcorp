@@ -4,6 +4,7 @@ var pMes = document.getElementById('pMes');
 function actualizar(){
   var id = document.getElementById('number').value;
   var fullName = document.getElementById('fullName').value;
+  var genero = document.getElementById('genero').value;
   var phone = document.getElementById('phone').value;
   var address = document.getElementById('address').value;
   var curp = document.getElementById('curp').value;
@@ -32,7 +33,7 @@ function actualizar(){
   }
   xmlhttp.open("POST","ajax/edit-user.ajax.php",true);
   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xmlhttp.send("id="+id+"&name="+fullName+"&phone="+phone+"&address="+address+"&curp="+curp+"&rfc="+rfc);
+  xmlhttp.send("id="+id+"&name="+fullName+"&genero="+genero+"&phone="+phone+"&address="+address+"&curp="+curp+"&rfc="+rfc);
 }
 
 function mensajeExito() {

@@ -34,6 +34,25 @@
                 <label for="fullName">Nombre completo</label>
                 <input type="text" class="form-control" id="fullName" value="<?php echo $checkUser['nombre']; ?>" maxlength="200">
               </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="genero">Genero</label>
+                </div>
+                <select class="custom-select" id="genero" onchange="">
+                  <option value="" <?php if ($checkUser['genero'] == ""): ?>
+                    selected
+                  <?php endif; ?>>Seleccione...</option>
+                  <option value="M" <?php if ($checkUser['genero'] == "M"): ?>
+                    selected
+                  <?php endif; ?>>Masculino</option>
+                  <option value="F" <?php if ($checkUser['genero'] == "F"): ?>
+                    selected
+                  <?php endif; ?>>Femenino</option>
+                  <option value="O" <?php if ($checkUser['genero'] == "O"): ?>
+                    selected
+                  <?php endif; ?>>Otro</option>
+                </select>
+              </div>
               <div class="form-group">
                 <label for="phone">Telefono</label>
                 <input type="text" class="form-control" id="phone" value="<?php echo $checkUser['telefono']; ?>" maxlength="15">

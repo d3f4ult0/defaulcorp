@@ -40,7 +40,7 @@
               </div>
               <div class="form-group">
                 <label for="pass2">Repetir contraseña*</label>
-                <input type="password" class="form-control" id="pass2" aria-describedby="pass2Help" placeholder="Ingresa contraseña nuevamente" onblur="checkPass2()">
+                <input type="password" class="form-control" id="pass2" aria-describedby="pass2Help" placeholder="Ingresa contraseña nuevamente" onkeyup="checkPass2()">
                 <small id="pass2Help" class="form-text text-muted"></small>
               </div>
               <small class="form-text text-muted"><strong>*</strong>Campos requeridos</small>

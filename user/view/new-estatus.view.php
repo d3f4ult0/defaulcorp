@@ -33,19 +33,19 @@
                 <small id="numeroHelp" class="form-text text-muted">El numero no se puede repetir.</small>
               </div>
               <div class="form-group">
-                <label for="nombre">Nombre del estado</label>
+                <label for="nombre">Nombre del estado*</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
                 <small id="nombreHelp" class="form-text text-muted">El nombre debe ser descriptivo, hasta 50 caracteres.</small>
               </div>
               <div class="form-group">
-                <label for="comentario">Comentario</label>
+                <label for="comentario">Descripción*</label>
                 <input type="text" class="form-control" id="comentario" placeholder="">
                 <small id="comentarioHelp" class="form-text text-muted">Describe a fondo el fin del estado, hasta 1500 caracteres.</small>
               </div>
               <small id="formHelp" class="form-text text-muted">*Datos Obligatorios</small>
               <br>
-              <button type="button" id="buttonNewChofer" class="btn btn-primary" disabled data-toggle="modal" data-target="#modalNew">
-                Nuevo chofer
+              <button type="button" id="buttonNewStatus" class="btn btn-primary" disabled data-toggle="modal" data-target="#modalNew">
+                Nuevo Estatus
               </button>
               <button type="reset" class="btn btn-warning" onclick="desactiveButton()">
                 Limpiar Formulario
