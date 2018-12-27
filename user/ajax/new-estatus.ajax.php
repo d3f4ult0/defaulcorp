@@ -12,7 +12,7 @@ $answerJSON = array('check' => 0, 'num' => 0, 'error' => "");
 if ($_GET['tipo'] != "") {
   $tipo = $_GET['tipo'];
 
-  $num = $connection->prepare('SELECT * FROM estatus WHERE tipo="'.$tipo.'"');
+  $num = $connection->prepare('SELECT * FROM estatus');
   $num->execute();
   // $numSig = $numSig[0];
   print_r ($num);
