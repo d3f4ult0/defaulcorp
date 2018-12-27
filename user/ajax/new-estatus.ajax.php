@@ -16,8 +16,8 @@ if ($_GET['tipo'] != "") {
   $numSig->execute(array(
     ':tipo' => $tipo
   ));
-  $numSig = $numSig[0];
-  echo $numSig;
+
+  print_r ($numSig);
   if ($numSig["id_estatus"]>0) {
     $answerJSON['num'] = $numSig["id_estatus"] + 1;
     $answerJSON['check'] = 1;
