@@ -14,7 +14,6 @@ if ($_GET['tipo'] != "") {
 
   $num = $connection->prepare('SELECT * FROM estatus WHERE tipo="'.$tipo.'"');
   $num->execute();
-  $num->fetchAll();
   // $numSig = $numSig[0];
   print_r ($num);
   // if ($numSig["id_estatus"]>0) {
