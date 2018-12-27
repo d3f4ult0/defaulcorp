@@ -13,9 +13,7 @@ if ($_GET['tipo'] != "") {
   $tipo = $_GET['tipo'];
 
   $numSig = $connection->prepare('SELECT * FROM estatus WHERE tipo="U" ORDER BY id_estatus DESC LIMIT 1');
-  $numSig->execute(array(
-    ':tipo' => $tipo
-  ));
+  $numSig->execute();
   $numSig->fetch();
 
   print_r ($numSig);
