@@ -12,10 +12,8 @@ $answerJSON = array('check' => 0, 'num' => 0, 'error' => "");
 if ($_GET['tipo'] != "") {
   $tipo = $_GET['tipo'];
 
-  $numSig = $connection->prepare('SELECT * FROM estatus WHERE tipo=":tipo" ORDER BY id_estatus DESC LIMIT 1');
-  $numSig->execute(array(
-    ':tipo' => $tipo
-  ));
+  $numSig = $connection->prepare('SELECT * FROM estatus WHERE tipo="'.$tipo.'" ORDER BY id_estatus DESC LIMIT 1');
+  $numSig->execute();
   if ($numSig["id_estatus"]>0) {
     $answerJSON['num'] = $numSig["id_estatus"] + 1;
     $answerJSON['check'] = 1;
