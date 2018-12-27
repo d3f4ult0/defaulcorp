@@ -20,26 +20,29 @@
                 </div>
                 <select class="custom-select" id="tipo" onchange="checkTipo()">
                   <option value="0" selected>Selecciona...</option>
+                  <option value="F1">Claves (F1)</option>
                   <option value="U">Usuario (U)</option>
-                  <option value="M">Unidad (M)</option>
                   <option value="A">Administrador/trabajador (A)</option>
                   <option value="C">Chofer (C)</option>
-                  <option value="F1">Claves (F1)</option>
+                  <option value="D">Documento (D)</option>
+                  <option value="I">Imagen (I)</option>
+                  <option value="P">Patron (P)</option>
+                  <option value="M">Unidad (M)</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="numero">Numero identificador del estado*</label>
-                <input type="text" class="form-control" id="numero" placeholder="Ingrese numero">
-                <small id="numeroHelp" class="form-text text-muted">El numero no se puede repetir.</small>
+                <label for="numero">Numero generado por el sistema</label>
+                <input type="text" class="form-control" id="numero" placeholder="Numero auto-generado" disabled>
+                <small id="numeroHelp" class="form-text text-muted">El numero no se puede cambiar.</small>
               </div>
               <div class="form-group">
                 <label for="nombre">Nombre del estado*</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" onblur="checkNombre()" maxlength="50">
                 <small id="nombreHelp" class="form-text text-muted">El nombre debe ser descriptivo, hasta 50 caracteres.</small>
               </div>
               <div class="form-group">
-                <label for="comentario">Descripción*</label>
-                <input type="text" class="form-control" id="comentario" placeholder="">
+                <label for="comentario">Descripción</label>
+                <input type="text" class="form-control" id="comentario" placeholder="" maxlength="1500">
                 <small id="comentarioHelp" class="form-text text-muted">Describe a fondo el fin del estado, hasta 1500 caracteres.</small>
               </div>
               <small id="formHelp" class="form-text text-muted">*Datos Obligatorios</small>

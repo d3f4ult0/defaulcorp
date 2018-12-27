@@ -1,42 +1,66 @@
 var numeroHelp = document.getElementById('numeroHelp');
-var btnCheck = [false,false,false,false,false,false,false,false,false];
+var nombreHelp = document.getElementById('nombreHelp');
+var btnCheck = [false,false];
 
-function checkNumero(){
+function checkTipo() {
   var xmlhttp;
-  var numero = document.getElementById('numero').value;
+  var tipo = document.getElementById('tipo').value;
   if (window.XMLHttpRequest) {
     xmlhttp = new XMLHttpRequest();
   } else {
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
-
-  if (serie === "") {
-    serieHelp.innerHTML = "<p class='red-text'>Numero del estatus <b>requerido</b></p>";
-    document.getElementById('numeroHelp').style.borderColor = "red";
-    printSerie.innerHTML = "";
+  if (tipo === 0) {
+    document.getElementById('tipo').style.borderColor = "red";
+    document.getElementById('numero').style.borderColor = "red";
+    numeroHelp.innerHTML = "<p class='red-text'>Seleccione un <b>tipo de estatus</b> para que el sistema le asigne un numero.</p>";
     btnCheck[0] = false;
     activeButton();
-  }else {
+  } else {
     xmlhttp.onreadystatechange = function(){
       if (this.readyState === 4 && this.status === 200) {
         var answer = JSON.parse(this.responseText);
         // answerUserName.innerHTML = this.responseText;
         if (answer['check'] == 1) {
-          document.getElementById('serie').style.borderColor = "green";
-          serieHelp.innerHTML = "";
-          btnCheck[1] = true;
+          document.getElementById('tipo').style.borderColor = "green";
+          document.getElementById('numero').style.borderColor = "green";
+          document.getElementById('numero').value = answer['num']
+          numeroHelp.innerHTML = "";
+          btnCheck[0] = true;
           activeButton();
-          printSerie.innerHTML = "Número de Serie: <strong>"+answer['data']+"</strong>";
         }else {
-          serieHelp.innerHTML = "<p class='red-text'>El número de serie <b>" + answer['data'] + "</b> ya estan asignado a otra unidad</p>";
-          document.getElementById('serie').style.borderColor = "red";
-          printSerie.innerHTML = "";
-          btnCheck[1] = false;
+          document.getElementById('tipo').style.borderColor = "red";
+          document.getElementById('numero').style.borderColor = "red";
+          numeroHelp.innerHTML = "<p class='red-text'>"+answer['error']+"</p>";
+          btnCheck[0] = false;
           activeButton();
         }
       }
     }
-    xmlhttp.open("GET","ajax/new-unidad.ajax.php?placas=&serie="+serie,true);
+    xmlhttp.open("GET","ajax/new-estatus.ajax.php?tipo="+tipo,true);
     xmlhttp.send();
+  }
+}
+
+function checkNombre(){
+  var nombre = document.getElementById('nombre').value;
+  if (nombre = "") {
+    document.getElementById('nombre').style.borderColor = "red";
+    nombreHelp.innerHTML = "<p class='red-text'>De un <b>nombre</b> al estatus.</p>";
+    btnCheck[0] = false;
+    activeButton();
+  } else {
+    document.getElementById('nombre').style.borderColor = "green";
+    nombreHelp.innerHTML = "";
+    btnCheck[0] = true;
+    activeButton();
+  }
+}
+
+function activeButton(){
+  if (btnCheck[0] == true && btnCheck[1] == true) {
+    document.getElementById('buttonNewStatus').disabled=false;
+  } else {
+    document.getElementById('buttonNewStatus').disabled=true;
   }
 }
