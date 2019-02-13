@@ -1,0 +1,185 @@
+/*Estilos para el menu en header.php*/
+.barra{
+   background: #36647A;
+}
+.barra a{
+   color: #BBE7FC;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-weight: 700;
+}
+.barra a:hover{
+   color: #fff;
+}
+.navbar-brand{
+   padding: 0;
+}
+.menu-barra ul li a:hover{
+   background: #4B5D66;
+}
+.navbar-toggle{
+   padding: 4px 8px;
+}
+.icon-menu{
+   color: #BBE7FC;
+   font-size: 20px;
+}
+.active a{
+   color: #fff;
+   background: #4B5D66;
+}
+.texto-logo{
+   line-height: 50px;
+   font-size: 30px;
+}
+.texto-logo p{
+   margin: 0;
+}
+.foto-perfil{
+   border: 1px solid #4B5D66;
+   border-radius: 15%;
+}
+.foto-perfil:hover{
+   border: 2px dashed #98DDCC;
+}
+.navbar-right .badge{
+   background: #98DDCC;
+   font-size: 15px;
+   color: #337ab7;;
+}
+/*Termina Menu*/
+/*Background para todo el documento*/
+body{
+   background: rgba(187,231,252,0.2);
+}
+/*Estilos del Jumbotron de bootstrap*/
+.jumbotron{
+   background: #98DDCC;
+   font-family: 'Poppins', sans-serif;
+}
+.error{
+   color: crimson;
+   font-size: 50px;
+}
+span.verde{
+   color: green;
+}
+span.rojo{
+   color: crimson;
+}
+/*Clase main para contenidos*/
+.main{
+   margin-top: 51px;
+}
+/*Migas de pan*/
+.breadcrumb{
+   background: rgba(187,231,252,0.6);
+}
+/*Aside*/
+aside{
+   /*background: rgba(75,93,102,0.3);*/
+}
+.menu-aside{
+   font-family: 'Alegreya Sans SC', sans-serif;
+   border-bottom: 5px solid #98DDCC;
+}
+aside a.list-group-item.active{
+   background: #36647A;
+   border-color: #36647A;
+}
+aside a.list-group-item.active:hover{
+   background: #4B5D66;
+}
+aside a.list-group-item:hover{
+   background: #E2E2E2;
+}
+/*Formularios*/
+.formulario{
+   margin-bottom: 30px;
+}
+.formulario h2{
+   font-family: 'Alegreya Sans SC', sans-serif;
+   border-bottom: 7px solid #98DDCC;
+}
+.formulario span{
+   font-size: 18px;
+}
+.formulario .bien{
+   color: green;
+}
+.formulario .mal{
+   color: red;
+}
+.formulario .input-group-addon{
+   padding: 12px;
+}
+.formulario .boton-inicio{
+   padding: 11px;
+}
+.formulario .form-control{
+   padding: 12px;
+   height: auto;
+}
+.media{
+   max-height: 145px;
+}
+.media img{
+   width: 120px;
+}
+img.editar-img{
+   position: relative;
+   bottom: 135px;
+   left: 5px;
+}
+/*Estilos para las alertas*/
+.alert{
+   padding: 10px;
+   border-radius: 0;
+}
+.alert-info{
+   background: #FFF;
+   border: 1px solid rgba(54,101,124,0.3);
+   border-left: 10px solid #36657C;
+}
+.alert-success{
+   background: #FFF;
+   border: 1px solid rgba(54,101,124,0.3);
+   border-left: 10px solid #98DDCC;
+}
+.alert-warning{
+   background: #FFF;
+   border: 1px solid rgba(54,101,124,0.3);
+   border-left: 10px solid orange;
+}
+.alert-danger{
+   background: #FFF;
+   border: 1px solid rgba(54,101,124,0.3);
+   border-left: 10px solid crimson;
+}
+li.rojo{
+   color: crimson;
+}
+li.verde{
+   color: green;
+}
+/*Estilos para las tablas*/
+.titulo-tabla{
+   font-family: 'Alegreya Sans SC', sans-serif;
+   border-bottom: 5px solid #98DDCC;
+}
+.table{
+   background: rgba(187,231,252,0.2);
+}
+.campo-botones a:first-child{
+   margin-bottom: 5px;
+}
+/*Estilos para footer en footer.php*/
+footer{
+   background: #36647A;
+}
+footer p{
+   font-family: 'Special Elite', cursive;
+   font-size: 15px;
+   margin-top: 10px;
+   padding: 10px 0;
+   color: #BBE7FC;
+}

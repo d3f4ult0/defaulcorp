@@ -1,19 +1,26 @@
 <?php session_start();
-require '../config/config.php';
-require '../config/functions.php';
-sessionVer();
 
-$connection = dbConnection($db_config);
-if (!$connection) {
-  header('Location: error.php');
+require '../configs/configs.php';
+require '../configs/functions.php';
+
+comprobarSesion();
+
+$conexion = conexion($bd_config);
+if (!$conexion) {
+   header('Location: error.php');
 }
 
-$title = "Inicio de ".$_SESSION['user'];
-$page = "index.php";
+$estatusSesion = comprobarEn('sesiones','id_sesion',$_SESSION['sesion_id'],$conexion);
 
-include 'view/header.php';
-include 'view/index.view.php';
-include 'view/modal-ver1.php';
-include '../view/footer.php';
-include 'verify-status.php';
+$titulo = 'Panel de usuario ' . $_SESSION['nombre_usuario'];
+$pagina = 'index.php';
+require 'views/header.php';
+
+$verificacion = verificacionUsuario();
+if (!empty($verificacion)) {
+   echo $verificacion;
+}
+
+require 'views/index.view.php';
+require 'views/footer.php';
 ?>
