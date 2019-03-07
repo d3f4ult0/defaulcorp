@@ -9,11 +9,14 @@ require 'views/header.php'; ?>
 
 <div class="jumbotron main">
    <div class="container">
-      <h1 class="text-center">Nueva session 3.0</h1>
+      <h1 class="text-center">Nueva session 0.1.3</h1>
       <h2>Se va a empezar a trabaja una nueva sesion para el usuario y administrador.</h2>
       <h3>Se va a conservar los estilos CSS, solo se va a cambiar la programacion de js para manejarla como se tenia anterior mente, solo se conservaran las verificaciones con el metodo blur()</h3>
       <h5 class="text-right">DefaultCORP© Abril-2017</h5>
    </div>
+</div>
+<div class="container">
+  <h1>Container de prueba</h1>
 </div>
 <div class="container">
    <div class="col-xs-12 col-md-9">
