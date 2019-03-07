@@ -2,7 +2,7 @@
   -webkit-box-shadow: 0px 1px 10px 5px rgba(50,142,22,0.46);
   -moz-box-shadow: 0px 1px 10px 5px rgba(50,142,22,0.46);
   box-shadow: 0px 1px 10px 5px rgba(50,142,22,0.46);
-  background-image: url(../resources/barra2.png);
+  background: green;
 }
 .m-top{
   margin-top: 30px;
