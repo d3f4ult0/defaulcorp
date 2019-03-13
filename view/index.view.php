@@ -9,6 +9,10 @@
 <div class="container">
    <div class="col-xs-12 col-md-9">
       <h4>Puntos a trabajar:</h4>
+      <ol>
+        <li>Prueba de push con gitKraken<span></span></li>
+        <li><h1>Prueba exitosa!</h1><span></span></li>
+      </ol>
          <ol>
             <li>Cabecera y pie de pagina se conservaran <span class="glyphicon glyphicon-ok verde"></span></li>
             <li>Aside dinamico para el cambio automatico <span class="glyphicon glyphicon-ok verde"></span></li>
