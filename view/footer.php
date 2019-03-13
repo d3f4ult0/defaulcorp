@@ -1,41 +1,22 @@
-<?php if ($pagina != 'login.php'): ?>
-   <div class="modal fade" id="ventanaSesion" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-         <div class="modal-content">
-            <div class="modal-header">
-               <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-               <!-- <h4 class="modal-title">Iniciar sesión</h4> -->
-            </div>
-
-            <div class="modal-body">
-               <?php require 'views/login.view.php'; ?>
-            </div>
-
-            <div class="modal-footer">
-               <button class="btn btn-danger" type="button" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-            </div>
-         </div>
-      </div>
-   </div>
-   <script>
-   $(document).ready(function(){
-      $("#btn-login").click(function(e){
-         e.preventDefault();
-         $("#ventanaSesion").modal("show");
-       });
-   });
-   </script>
-<?php endif; ?>
-      <footer>
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-xs-12 text-center">
-                  <p>Adrián Cabrera Jacobo - Default CORP© 2017
-                  <br>Todos los derechos reservados, cualquier reproduccion, copia o modificación sin previa autorización esta penada por la ley.</p>
-               </div>
-            </div>
-         </div>
-      </footer>
-   <script src="<?php echo RUTA; ?>js/bootstrap.min.js" charset="utf-8"></script>
-   </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+<div class="container-fluid">
+  <div class="row">
+    <!-- <div class="col-12 col-md-8">
+      Contacto------Nosotros------Menu----Ubicacion---
+    </div> -->
+    <div class="col-12 col-md-12">
+      <p class="text-center">El logo de la corporacion, asi como imagenes y fotografias son propiedad de la corporacion.
+        <br>Default-CORP©2018-Algunos derechos reservados</p>
+      <img src="resources/logow.png" alt="" width="40" class="logo-footer">
+      <img src="../resources/logow.png" alt="" width="40" class="logo-footer">
+    </div>
+  </div>
+</div>
+</footer>
 </html>
