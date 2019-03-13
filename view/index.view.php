@@ -8,9 +8,19 @@
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-9">
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolores dignissimos vel perspiciatis ut laboriosam placeat sapiente assumenda labore vero quibusdam aliquam iste impedit quaerat, animi, voluptas deserunt alias. Dicta.</span>
-      <span>Suscipit recusandae animi blanditiis est, mollitia, quidem sed at excepturi fugiat dolor eos quae accusantium libero sit error unde? Necessitatibus qui pariatur cum quae, voluptate amet nostrum odio, voluptates at!</span>
-      <span>Commodi repellendus perferendis obcaecati accusantium, necessitatibus sunt quisquam, consequuntur eos magni, tempore, natus sint consequatur officiis qui distinctio dolores? Quasi omnis voluptatibus officiis assumenda. Ratione, animi. Explicabo praesentium culpa voluptas?</span>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur vitae sunt quasi, possimus delectus minus voluptatum aliquam, magnam, error ducimus labore? Aspernatur soluta, fuga autem omnis? Ullam, voluptate obcaecati.</span><br>
+      <span>Atque maxime unde quo quis recusandae, labore omnis expedita distinctio adipisci voluptas doloremque earum aut rerum accusamus, quisquam commodi ut nulla facilis ducimus debitis velit quaerat porro. Tempora, dolorum soluta.</span><br>
+      <span>Iste similique quasi, repellendus maxime. Ratione est rerum similique in. Ipsa, saepe qui atque nesciunt quia repellendus totam, illum reprehenderit in, voluptatem officiis incidunt iusto. Officia quasi, ab dolorem sit.</span><br>
+      <span>Nesciunt, pariatur quae. Odio eum voluptatum sint beatae aliquid ipsa numquam dolore non, suscipit, corporis delectus ex molestias. Cupiditate quibusdam ea placeat obcaecati sapiente officia sit, molestias temporibus architecto veniam.</span><br>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur vitae sunt quasi, possimus delectus minus voluptatum aliquam, magnam, error ducimus labore? Aspernatur soluta, fuga autem omnis? Ullam, voluptate obcaecati.</span><br>
+      <span>Atque maxime unde quo quis recusandae, labore omnis expedita distinctio adipisci voluptas doloremque earum aut rerum accusamus, quisquam commodi ut nulla facilis ducimus debitis velit quaerat porro. Tempora, dolorum soluta.</span><br>
+      <span>Iste similique quasi, repellendus maxime. Ratione est rerum similique in. Ipsa, saepe qui atque nesciunt quia repellendus totam, illum reprehenderit in, voluptatem officiis incidunt iusto. Officia quasi, ab dolorem sit.</span><br>
+      <span>Nesciunt, pariatur quae. Odio eum voluptatum sint beatae aliquid ipsa numquam dolore non, suscipit, corporis delectus ex molestias. Cupiditate quibusdam ea placeat obcaecati sapiente officia sit, molestias temporibus architecto veniam.</span><br>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur vitae sunt quasi, possimus delectus minus voluptatum aliquam, magnam, error ducimus labore? Aspernatur soluta, fuga autem omnis? Ullam, voluptate obcaecati.</span><br>
+      <span>Atque maxime unde quo quis recusandae, labore omnis expedita distinctio adipisci voluptas doloremque earum aut rerum accusamus, quisquam commodi ut nulla facilis ducimus debitis velit quaerat porro. Tempora, dolorum soluta.</span><br>
+      <span>Iste similique quasi, repellendus maxime. Ratione est rerum similique in. Ipsa, saepe qui atque nesciunt quia repellendus totam, illum reprehenderit in, voluptatem officiis incidunt iusto. Officia quasi, ab dolorem sit.</span><br>
+      <span>Nesciunt, pariatur quae. Odio eum voluptatum sint beatae aliquid ipsa numquam dolore non, suscipit, corporis delectus ex molestias. Cupiditate quibusdam ea placeat obcaecati sapiente officia sit, molestias temporibus architecto veniam.</span><br>
+      
     </div>
     <?php require 'view/aside.php'; ?>
   </div>
