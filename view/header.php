@@ -13,7 +13,7 @@
 
   <header class="navbar sticky-top navbar-expand-lg navbar-dark sombra-header">
     <a class="navbar-brand" href="index.php">
-      <img src="resources/bannerDefaultCORP350x50" height="30" alt="">
+      <img src="resources/bannerDefaultCORP350x50.png" height="30" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
