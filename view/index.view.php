@@ -2,7 +2,7 @@
    <div class="container">
       <h1 class="text-center">Nueva session para TuPsique 0.1.3 (Aun a discusion con el team)</h1>
       <h3>Platicarlo con el team sobre lo que tiene que contener la pagina principal</h3>
-      <h1><?php echo RUTA."index.php"; ?></h1>
+      <h1><?php echo LINK."index.php"; ?></h1>
    </div>
 </div>
 
