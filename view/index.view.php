@@ -53,5 +53,5 @@
             </li>
          </ol>
    </div>
-   <?php require 'views/aside.php'; ?>
+   <?php require 'view/aside.php'; ?>
 </div>
