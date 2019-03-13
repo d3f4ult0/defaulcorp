@@ -55,5 +55,3 @@
    </div>
    <!-- <?php require 'views/aside.php'; ?> -->
 </div>
-
-<?php require 'views/footer.php'; ?>
