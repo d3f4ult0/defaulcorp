@@ -53,7 +53,7 @@
             </li>
          </ol>
    </div>
-   <?php require 'views/aside.php'; ?>
+   <!-- <?php require 'views/aside.php'; ?> -->
 </div>
 
 <?php require 'views/footer.php'; ?>
