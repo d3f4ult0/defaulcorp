@@ -1,7 +1,7 @@
 <?php session_start();
 
-require 'configs/configs.php';
-require 'configs/functions.php';
+require 'config/configs.php';
+require 'config/functions.php';
 
 sesionIniciada();
 

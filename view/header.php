@@ -37,7 +37,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="quienes.php">¿Quienes somos?</a>
-            <a class="dropdown-item" href="contacto.php">¿Por que debes realizar el test?</a>
+            <a class="dropdown-item" href="test-help.php">¿Por que debes realizar el test?</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="contacto.php">Contacto</a>
           </div>
